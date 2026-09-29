@@ -1,0 +1,278 @@
+/* =========================================
+   HERO
+========================================= */
+
+.cartoon-hero {
+    position: relative;
+
+    min-height: 100vh;
+
+    padding:
+        80px
+        20px
+        45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        #fff8ed;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   TOP
+========================================= */
+
+.hero-top {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.hero-eyebrow {
+    margin-bottom: 15px;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 4px;
+
+    color: #6c6056;
+}
+
+
+.hero-top h1 {
+    margin: 0;
+
+    font-size:
+        clamp(
+            55px,
+            9vw,
+            110px
+        );
+
+    line-height: 0.9;
+
+    letter-spacing: -3px;
+
+    color: #302824;
+}
+
+
+.hero-top h1 span {
+    display: inline-block;
+
+    margin:
+        0
+        10px;
+
+    font-size: 0.55em;
+
+    color: #d8797e;
+
+    transform:
+        rotate(-8deg);
+}
+
+
+.hero-married {
+    margin-top: 18px;
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    letter-spacing: 5px;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.hero-scene {
+    width:
+        min(
+            1050px,
+            94vw
+        );
+
+    margin:
+        15px auto
+        5px;
+}
+
+
+.hero-couple {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    object-fit: contain;
+
+    animation:
+        heroMove
+        4s
+        ease-in-out
+        infinite;
+}
+
+
+@keyframes heroMove {
+
+    0%,
+    100% {
+        transform:
+            translateX(0);
+    }
+
+    45% {
+        transform:
+            translateX(0);
+    }
+
+    50% {
+        transform:
+            translateX(8px);
+    }
+
+    55% {
+        transform:
+            translateX(-6px);
+    }
+
+    60% {
+        transform:
+            translateX(3px);
+    }
+
+    68% {
+        transform:
+            translateX(0);
+    }
+
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.hero-bottom {
+    text-align: center;
+}
+
+
+.hero-bottom > p {
+    margin-bottom: 24px;
+
+    font-size: 17px;
+
+    color: #554b45;
+}
+
+
+.hero-scroll {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    color: #88796f;
+}
+
+
+.hero-scroll b {
+    font-size: 24px;
+
+    animation:
+        heroArrow
+        1.5s
+        ease-in-out
+        infinite;
+}
+
+
+@keyframes heroArrow {
+
+    50% {
+        transform:
+            translateY(8px);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .cartoon-hero {
+        min-height: 100svh;
+
+        padding:
+            60px
+            15px
+            35px;
+    }
+
+
+    .hero-eyebrow {
+        font-size: 9px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .hero-top h1 {
+        font-size:
+            clamp(
+                45px,
+                15vw,
+                70px
+            );
+    }
+
+
+    .hero-married {
+        font-size: 9px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .hero-scene {
+        width: 112%;
+
+        margin:
+            30px
+            -6%
+            15px;
+    }
+
+}

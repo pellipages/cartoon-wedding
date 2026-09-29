@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Arjun & Navya</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/opening.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/date.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/rsvp.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         SCOOTER PARK OPENING
+    ========================================== -->
+
+    <section
+        class="opening"
+        id="opening"
+    >
+
+        <div class="opening-heading">
+
+            <p>
+                BEFORE WE BEGIN...
+            </p>
+
+            <h1>
+                Take a little ride
+            </h1>
+
+        </div>
+
+
+        <div
+            class="park-scene"
+            id="parkScene"
+        >
+
+
+            <!-- PARK -->
+
+            <img
+                src="images/park.png"
+                alt="Cartoon circular park"
+                class="park-image"
+            >
+
+
+            <!-- CENTER TEXT -->
+
+
+
+
+            <!-- ONE MOVING SCOOTER -->
+
+            <img
+                src="images/scooty-couple.png"
+                alt="Bride and groom riding a scooter"
+                class="scooty-couple"
+                id="scootyCouple"
+            >
+
+
+        </div>
+
+
+        <button
+            class="start-button"
+            id="startButton"
+            onclick="startRide()"
+        >
+            START THE RIDE
+        </button>
+
+
+        <p
+            class="ride-message"
+            id="rideMessage"
+        >
+            Hold on...
+        </p>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         MAIN WEBSITE
+    ========================================== -->
+
+    <main
+        class="website"
+        id="website"
+    >
+
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <section
+            class="cartoon-hero"
+            id="invite-head"
+        >
+
+
+            <div class="hero-top reveal">
+
+                <p class="hero-eyebrow">
+                    WELL... HE DID SAY YES.
+                </p>
+
+
+                <h1>
+
+                    ARJUN
+
+                    <span>
+                        &
+                    </span>
+
+                    NAVYA
+
+                </h1>
+
+
+                <p class="hero-married">
+                    ARE GETTING MARRIED
+                </p>
+
+            </div>
+
+
+
+            <div class="hero-scene reveal-scale">
+
+                <img
+                    src="images/hero-couple.png"
+                    alt="Funny bride and groom"
+                    class="hero-couple"
+                >
+
+            </div>
+
+
+
+            <div class="hero-bottom reveal">
+
+                <p>
+                    He agreed.
+                    <strong>
+                        No take-backs now.
+                    </strong>
+                </p>
+
+
+                <span class="hero-scroll">
+
+                    THE DRAMA CONTINUES
+
+                    <b>
+                        ↓
+                    </b>
+
+                </span>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             DATE REVEAL
+        ====================================== -->
+
+        <section
+            class="news-section"
+            id="date"
+        >
+
+
+            <div class="news-intro reveal">
+
+                <p>
+                    PSST... HAVE YOU HEARD?
+                </p>
+
+
+                <h2>
+                    We've got some news 👀
+                </h2>
+
+            </div>
+
+
+
+            <div
+                class="news-wrapper reveal-scale"
+                id="newsWrapper"
+            >
+
+                <img
+                    src="images/newspaper.png"
+                    alt="Wedding Breaking News"
+                    class="newspaper"
+                    onclick="revealDate()"
+                >
+
+            </div>
+
+
+
+            <div
+                class="date-reveal"
+                id="dateReveal"
+            >
+
+                <p class="tiny-news">
+                    OKAY FINE. HERE'S THE ACTUAL SCOOP.
+                </p>
+
+
+                <h2>
+                    29
+                </h2>
+
+
+                <h3>
+                    NOVEMBER
+                </h3>
+
+
+                <p class="year">
+                    2026
+                </p>
+
+
+                <p class="date-joke">
+                    Yep. They're actually doing it.
+                </p>
+
+
+                <p class="date-sub">
+
+                    Cancel your plans.
+                    Find an outfit.
+
+                    <br>
+
+                    Start practising your dance moves.
+
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             WEDDING TOUR
+        ====================================== -->
+
+        <section
+            class="events-section"
+            id="events"
+        >
+
+
+            <div class="events-heading reveal">
+
+                <p>
+                    PACK YOUR BAGS
+                </p>
+
+
+                <h2>
+                    The Wedding Tour
+                </h2>
+
+
+                <span>
+                    One cycle. Four stops. Questionable planning.
+                </span>
+
+            </div>
+
+
+
+            <div
+                class="journey"
+                id="journey"
+            >
+
+
+                <!-- ROAD -->
+
+                <svg
+                    class="road-svg"
+                    viewBox="0 0 1000 2200"
+                    preserveAspectRatio="none"
+                >
+
+
+                    <path
+                        class="road-border"
+                        d="
+                        M 500 0
+
+                        C 500 180,
+                          180 180,
+                          220 430
+
+                        C 260 650,
+                          800 560,
+                          780 850
+
+                        C 760 1100,
+                          230 1050,
+                          250 1350
+
+                        C 270 1600,
+                          800 1500,
+                          760 1800
+
+                        C 730 2020,
+                          500 2050,
+                          500 2200
+                        "
+                    />
+
+
+                    <path
+                        id="travelPath"
+                        class="road"
+                        d="
+                        M 500 0
+
+                        C 500 180,
+                          180 180,
+                          220 430
+
+                        C 260 650,
+                          800 560,
+                          780 850
+
+                        C 760 1100,
+                          230 1050,
+                          250 1350
+
+                        C 270 1600,
+                          800 1500,
+                          760 1800
+
+                        C 730 2020,
+                          500 2050,
+                          500 2200
+                        "
+                    />
+
+
+                    <path
+                        class="road-dash"
+                        d="
+                        M 500 0
+
+                        C 500 180,
+                          180 180,
+                          220 430
+
+                        C 260 650,
+                          800 560,
+                          780 850
+
+                        C 760 1100,
+                          230 1050,
+                          250 1350
+
+                        C 270 1600,
+                          800 1500,
+                          760 1800
+
+                        C 730 2020,
+                          500 2050,
+                          500 2200
+                        "
+                    />
+
+
+                </svg>
+
+
+
+                <!-- MOVING COUPLE -->
+
+                <img
+                    src="images/cycle-couple.png"
+                    alt="Bride and groom travelling"
+                    class="travelling-couple"
+                    id="travellingCouple"
+                >
+
+
+
+                <!-- HALDI -->
+
+                <div
+                    class="event-stop stop-1 reveal-right"
+                >
+
+                    <div class="event-content">
+
+                        <img
+                            src="images/haldi.png"
+                            alt="Haldi"
+                            class="event-image"
+                        >
+
+
+                        <div class="event-text">
+
+                            <span class="stop-number">
+                                STOP 01
+                            </span>
+
+
+                            <h3>
+                                Haldi
+                            </h3>
+
+
+                            <p class="event-joke">
+                                The one where everyone turns yellow.
+                            </p>
+
+
+                            <strong>
+                                29 NOV • 10:00 AM
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ENGAGEMENT -->
+
+                <div
+                    class="event-stop stop-2 reveal-left"
+                >
+
+                    <div class="event-content">
+
+                        <img
+                            src="images/engagement.png"
+                            alt="Engagement"
+                            class="event-image"
+                        >
+
+
+                        <div class="event-text">
+
+                            <span class="stop-number">
+                                STOP 02
+                            </span>
+
+
+                            <h3>
+                                Engagement
+                            </h3>
+
+
+                            <p class="event-joke">
+                                Making it official... again.
+                            </p>
+
+
+                            <strong>
+                                29 NOV • 6:00 PM
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WEDDING -->
+
+                <div
+                    class="event-stop stop-3 reveal-right"
+                >
+
+                    <div class="event-content">
+
+                        <img
+                            src="images/wedding.png"
+                            alt="Wedding"
+                            class="event-image"
+                        >
+
+
+                        <div class="event-text">
+
+                            <span class="stop-number">
+                                STOP 03
+                            </span>
+
+
+                            <h3>
+                                Wedding
+                            </h3>
+
+
+                            <p class="event-joke">
+                                Okay. This one's actually important.
+                            </p>
+
+
+                            <strong>
+                                30 NOV • 9:30 AM
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RECEPTION -->
+
+                <div
+                    class="event-stop stop-4 reveal-left"
+                >
+
+                    <div class="event-content">
+
+                        <img
+                            src="images/reception.png"
+                            alt="Reception"
+                            class="event-image"
+                        >
+
+
+                        <div class="event-text">
+
+                            <span class="stop-number">
+                                FINAL STOP
+                            </span>
+
+
+                            <h3>
+                                Reception
+                            </h3>
+
+
+                            <p class="event-joke">
+                                You survived. Now go eat.
+                            </p>
+
+
+                            <strong>
+                                30 NOV • 7:00 PM
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             RSVP
+        ====================================== -->
+
+        <section
+            class="rsvp-section"
+            id="rsvp"
+        >
+
+
+            <div class="rsvp-card reveal-scale">
+
+
+                <p class="rsvp-small">
+                    WAIT... ONE IMPORTANT QUESTION
+                </p>
+
+
+                <h2>
+                    Sooo... Are You Coming?
+                </h2>
+
+
+                <p class="rsvp-intro">
+
+                    We've planned the wedding,
+                    picked the outfits,
+                    survived the chaos...
+
+                    <br><br>
+
+                    Now we just need to know if
+
+                    <strong>
+                        YOU
+                    </strong>
+
+                    are coming.
+
+                </p>
+
+
+
+                <form
+                    id="rsvpForm"
+                    onsubmit="submitRSVP(event)"
+                >
+
+
+                    <div class="form-group">
+
+                        <label for="guestName">
+                            Your Name
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="guestName"
+                            placeholder="Who are you?"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Will you attend?
+                        </label>
+
+
+                        <div class="rsvp-options">
+
+
+                            <label class="rsvp-option">
+
+                                <input
+                                    type="radio"
+                                    name="attendance"
+                                    value="yes"
+                                    required
+                                >
+
+                                <span>
+                                    Obviously! Wouldn't miss it
+                                </span>
+
+                            </label>
+
+
+
+                            <label class="rsvp-option">
+
+                                <input
+                                    type="radio"
+                                    name="attendance"
+                                    value="food"
+                                >
+
+                                <span>
+                                    Yes, but mainly for the food
+                                </span>
+
+                            </label>
+
+
+
+                            <label class="rsvp-option">
+
+                                <input
+                                    type="radio"
+                                    name="attendance"
+                                    value="maybe"
+                                >
+
+                                <span>
+                                    Still convincing my family
+                                </span>
+
+                            </label>
+
+
+
+                            <label class="rsvp-option">
+
+                                <input
+                                    type="radio"
+                                    name="attendance"
+                                    value="no"
+                                >
+
+                                <span>
+                                    Sorry, I can't make it
+                                </span>
+
+                            </label>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="guestCount">
+                            Number of people coming
+                        </label>
+
+
+                        <select id="guestCount">
+
+                            <option value="1">
+                                1 person
+                            </option>
+
+                            <option value="2">
+                                2 people
+                            </option>
+
+                            <option value="3">
+                                3 people
+                            </option>
+
+                            <option value="4">
+                                4 people
+                            </option>
+
+                            <option value="5">
+                                5+ people
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="guestMessage">
+                            Anything you want to tell us?
+                        </label>
+
+
+                        <textarea
+                            id="guestMessage"
+                            placeholder="Drop your wishes, excuses or questionable marriage advice..."
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="rsvp-button"
+                    >
+                        SEND MY ANSWER
+                    </button>
+
+
+                </form>
+
+
+
+                <div
+                    class="rsvp-success"
+                    id="rsvpSuccess"
+                >
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

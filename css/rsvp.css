@@ -1,0 +1,281 @@
+/* =========================================
+   RSVP
+========================================= */
+
+.rsvp-section {
+    min-height: 100vh;
+
+    padding:
+        100px
+        20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+        #f8f1e7;
+}
+
+
+.rsvp-card {
+    width: 100%;
+
+    max-width: 650px;
+
+    padding:
+        55px
+        50px;
+
+    background:
+        #fffaf2;
+
+    border:
+        3px solid
+        #302824;
+
+    border-radius:
+        25px;
+
+    text-align: center;
+
+    box-shadow:
+        8px
+        8px
+        0
+        #302824;
+}
+
+
+.rsvp-small {
+    margin-bottom: 15px;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+.rsvp-card h2 {
+    margin-bottom: 25px;
+
+    font-size:
+        clamp(
+            40px,
+            6vw,
+            65px
+        );
+
+    line-height: 1;
+}
+
+
+.rsvp-intro {
+    max-width: 480px;
+
+    margin:
+        0 auto
+        40px;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+.form-group {
+    margin-bottom: 28px;
+
+    text-align: left;
+}
+
+
+.form-group > label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding:
+        15px
+        16px;
+
+    border:
+        2px solid
+        #302824;
+
+    border-radius: 12px;
+
+    background: white;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+.form-group textarea {
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+
+.rsvp-options {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.rsvp-option {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px;
+
+    border:
+        2px solid
+        #302824;
+
+    border-radius: 12px;
+
+    background: white;
+
+    cursor: pointer;
+
+    transition:
+        0.2s ease;
+}
+
+
+.rsvp-option:hover {
+    transform:
+        translate(
+            -2px,
+            -2px
+        );
+
+    box-shadow:
+        3px
+        3px
+        0
+        #302824;
+
+    background:
+        #fff4d7;
+}
+
+
+.rsvp-option input {
+    width: 18px;
+
+    height: 18px;
+
+    accent-color:
+        #302824;
+}
+
+
+.rsvp-button {
+    padding:
+        16px
+        35px;
+
+    border:
+        2px solid
+        #302824;
+
+    border-radius: 50px;
+
+    background:
+        #efc86e;
+
+    font-family: inherit;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    box-shadow:
+        5px
+        5px
+        0
+        #302824;
+}
+
+
+.rsvp-success {
+    display: none;
+
+    padding: 30px;
+
+    border:
+        2px dashed
+        #302824;
+
+    border-radius: 15px;
+
+    background: white;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+.rsvp-success strong {
+    font-size: 24px;
+}
+
+
+@media (max-width: 600px) {
+
+    .rsvp-section {
+        padding:
+            70px
+            18px;
+    }
+
+
+    .rsvp-card {
+        padding:
+            40px
+            22px;
+    }
+
+
+    .rsvp-card h2 {
+        font-size:
+            40px;
+    }
+
+
+    .rsvp-button {
+        width: 100%;
+    }
+
+}
